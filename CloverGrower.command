@@ -48,7 +48,9 @@ case "${theSystem}" in
     12)	export rootSystem="Mountain Lion" ;;
     13)	export rootSystem="Mavericks" ;;
     14)	export rootSystem="Yosemite" ;;
-    [15-20]) rootSystem="Unknown" ;;
+    15)	export rootSystem="El Capitan" ;;
+    16)	export rootSystem="Sierra" ;;
+    [17-20]) rootSystem="Unknown" ;;
 esac
 
 # XCode check
