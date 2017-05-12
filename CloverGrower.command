@@ -105,7 +105,7 @@ localGCC=
 
 #Always use current Version when building
 acpicaVersInfo=$(curl -s https://acpica.org/downloads/ | grep 'The current release of ACPICA is version <strong>')
-acpicaVers="${acpicaVersInfo:56:8}"
+acpicaVers="${acpicaVersInfo:191:8}"
 export TARBALL_ACPICA=acpica-unix-$acpicaVers
 
 export DIR_MAIN=${DIR_MAIN:-$HOME/src}
