@@ -16,7 +16,7 @@ TOOLCHAIN_DIR=${TOOLCHAIN_DIR:-~/opt}
 export PREFIX=${PREFIX:-$TOOLCHAIN_DIR}
 # use latest STABLE nasm
 nasmVersInfo=$(curl -s http://www.nasm.us | grep '<a href="http://www.nasm.us/pub/nasm/releasebuilds/')
-export NASM_VERSION="${nasmVersInfo:158:7}"
+export NASM_VERSION="${nasmVersInfo:154:7}"
 echo $NASM_VERSION
 if [[ ! -x "$TOOLCHAIN_DIR"/bin/gcc || \
       ! -x "$TOOLCHAIN_DIR"/bin/g++ ]]; then
